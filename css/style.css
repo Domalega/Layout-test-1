@@ -172,3 +172,69 @@ body {
 
 
 /* INTRO STYLE END */
+
+
+/* BENEFITS STYLE START */
+
+.benefits__wrapper {
+    background-color: white;
+    max-width: 1262px;
+    max-height: 655px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 20px 0px #15182429;
+    position: relative;
+}
+
+.benefits__title {
+    width: 100%;
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 500;
+    padding: 93px 100px 88px 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background-color: white;
+}
+
+.benefits__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 55px;
+    padding: 0px 100px 110px;
+}
+
+.benefits__card {
+    width: 317px;
+}
+
+.benefits__card-icon {
+    padding-bottom: 37px;
+}
+
+.benefits__card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 26px;
+}
+
+.benefits__card-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 47px;
+}
+
+.benefits__card-more {
+    color: #006DFE;
+    text-decoration: none;
+}
+
+.benefits_card-more-arrow {
+    padding-left: 26px;
+}
+
+
+/* BENEFITS STYLE END */
