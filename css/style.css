@@ -108,9 +108,66 @@ body {
 /* INTRO STYLE START */
 
 .intro {
-    height: 100vh;
+    min-height: 100vh;
     background: url(../img/intro.jpg);
     background-size: cover;
+    color: #ffffff;
+}
+
+.intro__title {
+    padding-top: 263px;
+    margin-bottom: 22px;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 500;
+    width: 619px;
+}
+
+.intro__text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 546px;
+    padding-bottom: 59px;
+}
+
+.search-form__info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-form__field {
+    background-color: transparent;
+    background: url(../img/svg/oval.svg) no-repeat left 6px;
+    background-size: 20px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    width: 297px;
+    margin-right: 60px;
+    border: transparent;
+    border-bottom: 3px solid #BFC0C5;
+    color: white;
+}
+
+.search-form__field::placeholder {
+    color: white;
+}
+
+.search-form__submit {
+    background-color: #1B7DFF;
+    padding: 15px 39px 15px 39px;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.8px;
+    border: 0;
+}
+
+.search-form__submit:hover,
+.search-form__submit:active,
+.search-form__submit:focus {
+    transform: scale(1.05);
+    background-color: #1c57a5;
 }
 
 
