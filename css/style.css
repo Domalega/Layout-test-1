@@ -268,9 +268,10 @@ body {
 
 /* PLACES STYLE START */
 
-.places_wrapper {
+.places__wrapper {
     max-width: 1262px;
     margin: 0 auto;
+    margin-bottom: 131px;
 }
 
 .places__caption {
@@ -317,6 +318,7 @@ body {
 }
 
 .places__cards {
+    width: 1262px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;
@@ -387,3 +389,60 @@ body {
 
 
 /* PLACES STYLE END */
+
+
+/* PREFECTURE STYLE START  */
+
+.prefectures__wrapper {
+    max-width: 1262px;
+    margin: 0 auto;
+    margin-bottom: 131px;
+}
+
+.prefectures {
+    margin-bottom: 139px;
+}
+
+.prefecture__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 108px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.prefectures__info {
+    object-fit: cover;
+}
+
+.prefecture__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    color: #102746;
+    margin-bottom: 85px;
+}
+
+.prefecture__disc {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #102746;
+    margin-bottom: 66px;
+}
+
+.prefecture__link {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+}
+
+.prefecture__card-card-2 {
+    margin-top: 112px;
+}
+
+
+/* PREFECTURE STYLE END */
