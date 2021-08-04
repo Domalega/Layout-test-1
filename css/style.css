@@ -88,6 +88,15 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    transition: 0.2s linear;
+    padding: 30px;
+}
+
+.header__active {
+    background-color: #0E1D28;
+    opacity: 0.8;
+    padding: 30px;
+    z-index: 5;
 }
 
 .header__wrapper {
@@ -408,12 +417,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0 108px;
     align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.prefectures__info {
-    object-fit: cover;
 }
 
 .prefecture__title {
@@ -446,3 +449,101 @@ body {
 
 
 /* PREFECTURE STYLE END */
+
+
+/* TOP STYLE START */
+
+.top__wrapper {
+    max-width: 1262px;
+    margin: 0 auto;
+}
+
+.top__title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 65px;
+}
+
+.top__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 57px 57px;
+}
+
+.top__card {
+    grid-column: span 1;
+    max-width: 386px;
+    max-height: 560px;
+}
+
+.top__card-pic {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.top__card-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 16px 25px;
+}
+
+.top__card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 auto 0 0;
+}
+
+.top__card-likes {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 20px;
+    background: url(../img/svg/heart.svg) no-repeat right;
+    margin-right: 14px;
+}
+
+.top__card-comments {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 23px;
+    background: url(../img/svg/comment.svg) no-repeat right;
+}
+
+.top__card-desc {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 31px;
+}
+
+.top__card-more {
+    flex-basis: 118px;
+    background-color: #006DFE;
+    padding: 12px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* TOP STYLE END */
+
+
+/* VIDEO STYLE START */
+
+
+/*VIDEO STYLE END */
