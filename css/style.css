@@ -460,6 +460,7 @@ body {
 .top__wrapper {
     max-width: 1262px;
     margin: 0 auto;
+    margin-bottom: 120px;
 }
 
 .top__title {
@@ -481,6 +482,7 @@ body {
 .top__card {
     grid-column: span 1;
     max-width: 390px;
+    margin-bottom: 20px;
 }
 
 .top__card-pic {
@@ -543,7 +545,6 @@ body {
     padding: 12px 20px;
     color: #ffffff;
     text-decoration: none;
-    margin: auto 0 0 0;
 }
 
 .top__card-more:hover,
@@ -558,5 +559,69 @@ body {
 
 /* VIDEO STYLE START */
 
+.videos {
+    width: 100%;
+}
+
+.videos__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.video__item {
+    padding-top: 56.25%;
+}
+
+.video__value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 /*VIDEO STYLE END */
+
+
+/*FOOTER STYLE START */
+
+.footer {
+    background: #0E1D28;
+    padding: 119px 0;
+}
+
+.footer__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__logo {
+    width: 50%;
+}
+
+.footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.footer__menu-title {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer__menu-link {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/*FOOTER STYLE END */
