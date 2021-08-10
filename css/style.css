@@ -97,7 +97,7 @@ body {
     background-color: #0E1D28;
     opacity: 0.8;
     padding-bottom: 30px;
-    padding-top: 0px;
+    padding-top: 15px;
     z-index: 5;
 }
 
@@ -668,6 +668,9 @@ body {
 /*MEDIA STYLE START */
 
 @media screen and (max-width: 767px) {
+    .header__active {
+        opacity: 0;
+    }
     .header__burger {
         display: block;
     }
@@ -677,7 +680,8 @@ body {
         position: fixed;
         top: 0;
         left: 0;
-        background-color: black;
+        background-color: #0E1D28;
+        opacity: 0.99999;
         z-index: 11;
         padding: 70px;
         transform: translateX(100%);
