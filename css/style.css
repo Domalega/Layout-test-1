@@ -172,11 +172,10 @@ body {
 /* INTRO STYLE START */
 
 .intro {
-    min-height: 100h;
     background: url(../img/intro.jpg);
     background-size: cover;
     color: #ffffff;
-    padding-bottom: 300px;
+    padding-bottom: 350px;
 }
 
 .intro__title {
@@ -364,7 +363,8 @@ body {
 .places__cards {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 
 .places__card {
@@ -398,26 +398,20 @@ body {
     z-index: 3;
 }
 
-.places__card_size_lg {
-    grid-column: span 3;
-}
-
-.places__card_size_sm {
-    grid-column: span 2;
-}
-
 .places__card-pic {
     width: 100%;
     transition: .15s all;
 }
 
-.places__card-pic_size_lg {
+.places__card_size_lg {
     height: 354px;
+    grid-column: span 3;
     object-fit: cover;
 }
 
-.places__card-pic_size_sm {
+.places__card_size_sm {
     height: 283px;
+    grid-column: span 2;
     object-fit: cover;
 }
 
@@ -450,7 +444,7 @@ body {
 .prefecture__card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0 108px;
+    grid-column-gap: 108px;
     align-items: center;
     width: 100%;
 }
@@ -513,7 +507,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 57px 57px;
+    grid-column-gap: 57px;
 }
 
 .top__card {
@@ -667,6 +661,63 @@ body {
 
 /*MEDIA STYLE START */
 
+@media screen and (max-width: 970px) {
+    .search-form__field {
+        margin-bottom: 20px;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .intro {
+        padding-bottom: 200px;
+    }
+    .benefits__wrapper {
+        box-shadow: none;
+        margin-bottom: 50px;
+    }
+    .benefits__cards {
+        padding: 0 15px;
+        grid-column-gap: 10px;
+    }
+    .benefits__card {
+        margin-bottom: 0;
+    }
+    .benefits__title {
+        padding: 45px;
+    }
+    .places__card_size_lg {
+        grid-column: span 6;
+        height: 100%;
+    }
+    .places__card_size_sm {
+        grid-column: span 6;
+        height: 100%;
+    }
+    .prefecture__card {
+        grid-column-gap: 40px;
+    }
+    .prefecture__card-card-2 {
+        margin-top: 40px;
+    }
+    .top__cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .footer {
+        padding-bottom: 10px 40px;
+    }
+    .footer__logo {
+        width: 40%;
+        transform: scale(0.9);
+    }
+    .footer__nav {
+        width: 60%;
+    }
+    .footer__item {
+        justify-content: space-around;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .header__active {
         opacity: 0;
@@ -685,7 +736,7 @@ body {
         z-index: 11;
         padding: 70px;
         transform: translateX(100%);
-        transition: 0.2s linear;
+        transition: 0.1s ease-in-out;
     }
     .header__nav_active {
         transform: translateX(0);
@@ -722,6 +773,10 @@ body {
     }
     .header__burger-close-line:last-child {
         transform: translateY(0) rotate(-45deg);
+    }
+    .top__cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
     }
 }
 
