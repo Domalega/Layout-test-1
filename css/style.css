@@ -778,6 +778,15 @@ body {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
+    .top__card {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .top__wrapper {
+        margin-bottom: 50px;
+    }
 }
 
 
