@@ -699,26 +699,6 @@ body {
         grid-column: span 6;
         height: 100%;
     }
-    .prefectures__wrapper,
-    .prefectures {
-        margin-bottom: 60px;
-    }
-    .prefectures__pic {
-        margin-top: 20px;
-    }
-    .prefecture__card {
-        grid-column-gap: 40px;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .prefecture__card-card-2 {
-        margin-top: 20px;
-    }
-    .prefecture__title {
-        margin: 20px 0;
-    }
-    .prefecture__disc {
-        margin-bottom: 20px;
-    }
     .top__cards {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -817,6 +797,27 @@ body {
     }
     .places__title {
         margin: 0px;
+    }
+    .prefectures__wrapper,
+    .prefectures {
+        margin-bottom: 60px;
+    }
+    .prefectures__pic {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .prefecture__card {
+        grid-column-gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .prefecture__card-card-2 {
+        margin-top: 20px;
+    }
+    .prefecture__title {
+        margin: 20px 0;
+    }
+    .prefecture__disc {
+        margin-bottom: 20px;
     }
     .footer {
         padding: 80px 0px;
